@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+body {
+    background-color: #f2f2f2;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid #d0d0d0;
+
+}
+
+.bloco {
+    max-width: 35vw;
+    border: 1px solid #d0d0d0;
+    display: flex;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin: 15px;
+    padding: 20px 10px;
+}
+
+.conteudo button {
+  background-color: #808080;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  border: 1px  solid black; 
+  color: #fff;
+}
+
+.bloco figure { 
+    width: 150px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.bloco figure img {
+    display: flex;
+    justify-content: flex-start;
+    width: 150px;
+    margin: 0 auto;
+}
+
+.bloco figure ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.bloco figure li {
+    text-align: center;
+}
+
+.bloco figure ul li img {
+    width: 30px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.bloco figure ul li img:hover {
+    opacity: 0.4;
+}
+
+.bloco .conteudo {
+    width: 100%;
+    padding: 0 5px;
+}
+
+.conteudo button:hover {
+  opacity: 0.4;
+}
+
+.conteudo h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+
+}
+.conteudo p {
+    font-size: 13px;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    .bloco {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .bloco {
+        display: inline;
+        max-width: 100%;
+    }
+}    
